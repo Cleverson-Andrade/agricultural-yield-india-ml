@@ -1,4 +1,4 @@
-# 🌾 Previsão de Produtividade Agrícola com Machine Learning  
+# 🌾 Análise e Previsão de Produtividade Agrícola com Machine Learning  
 ### (Dados Agrícolas da Índia)
 
 ## 📌 Visão Geral do Projeto
@@ -33,7 +33,8 @@ Apesar do recorte geográfico específico, as **técnicas, métodos e fluxo de t
 ### Variável alvo:
 - **Produtividade (Yield)** — produção por unidade de área
 
-Arquivo utilizado no projeto: crop_yield_india.csv
+Arquivo utilizado no projeto: [crop_yield_india.csv](crop_yield_india.csv)
+
 
 ---
 
@@ -58,7 +59,7 @@ O projeto foi desenvolvido seguindo um fluxo típico de **Ciência de Dados apli
 
 ## 🤖 Modelo de Machine Learning
 
-- Algoritmo utilizado: **Random Forest Regressor**
+- Algoritmo utilizado: **Regressão Linear**
 
 ### Justificativa da escolha:
 - Capaz de capturar **relações não lineares**
