@@ -33,7 +33,7 @@ Apesar do recorte geográfico específico, as **técnicas, métodos e fluxo de t
 ### Variável alvo:
 - **Produtividade (Yield)** — produção por unidade de área
 
-Arquivo utilizado no projeto: data/agricultural-yield-india-ml.csv
+Arquivo utilizado no projeto: crop_yield_india.csv
 
 ---
 
