@@ -1,102 +1,60 @@
-# 🌾 Análise e Previsão de Produtividade Agrícola com Machine Learning  
-### (Dados Agrícolas da Índia)
+# 🌾 Agricultural Yield Prediction: Machine Learning (India Dataset)
 
-## 📌 Visão Geral do Projeto
-Este projeto aplica técnicas de **Análise de Dados** e **Machine Learning** para prever a **produtividade agrícola (Yield)** com base em fatores ambientais, produtivos e regionais, como volume de chuvas, uso de fertilizantes e pesticidas, área cultivada, estação do ano e localização geográfica.
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Machine Learning](https://img.shields.io/badge/Predictive-Analytics-blue)
 
-O estudo foi desenvolvido a partir de **dados agrícolas reais de diferentes estados da Índia**, permitindo a construção e avaliação de modelos preditivos em um contexto agrícola amplo e diverso.  
-Apesar do recorte geográfico específico, as **técnicas, métodos e fluxo de trabalho apresentados são amplamente utilizados no agronegócio global**, incluindo empresas multinacionais do setor agrícola.
-
----
-
-## 📊 Conjunto de Dados
-- Fonte: *Agricultural Crop Yield in Indian States Dataset*
-- País de referência: **Índia**
-- Total de registros: aproximadamente **19.600**
-- Cada linha representa dados agrícolas consolidados por:
-  - Cultura cultivada
-  - Ano da safra
-  - Estação agrícola
-  - Estado (região da Índia)
-
-### Variáveis disponíveis:
-- **Cultura**: tipo de cultura agrícola
-- **Ano da safra**
-- **Estação**
-- **Estado**: estado indiano onde ocorreu o cultivo
-- **Área cultivada (hectares)**
-- **Produção total**
-- **Chuva anual (mm)**
-- **Fertilizante utilizado**
-- **Pesticida utilizado**
-
-### Variável alvo:
-- **Produtividade (Yield)** — produção por unidade de área
-
-📂 **Arquivo utilizado no projeto:**
-[crop_yield_india.csv](crop_yield_india.csv) — Dataset de produtividade agrícola da Índia
-
+[English](#english) • [Português](#portugues)
 
 ---
 
-## 🧪 Metodologia Utilizada
+<a name="english"></a>
+## 🇺🇸 English
 
-O projeto foi desenvolvido seguindo um fluxo típico de **Ciência de Dados aplicado ao agronegócio**, contemplando tanto análises descritivas quanto preditivas:
+### 📝 Project Overview
+This project applies **Data Science** and **Machine Learning** techniques to predict agricultural productivity (Yield) based on environmental, production, and regional factors such as rainfall, fertilizer and pesticide use, area, season, and location. 
 
-1. **Carregamento e inspeção inicial dos dados**
-2. **Análise exploratória dos dados (EDA)**
-3. **Pré-processamento e engenharia de atributos**
-   - Renomeação das colunas para português
-   - Tratamento de variáveis categóricas
-   - Aplicação de One-Hot Encoding
-4. **Separação dos dados em conjuntos de treino e teste**
-5. **Treinamento de modelo de Machine Learning**
-6. **Avaliação do desempenho do modelo**
-7. **Análise de interpretabilidade**
-   - Importância das variáveis
-   - Visualização gráfica dos fatores mais relevantes
+Developed using real-world agricultural data from Indian states, this study demonstrates a robust workflow applicable to global agribusiness R&D, focusing on predictive accuracy and model transparency.
 
----
+### 🔬 Technical Methodology
+1. **Data Auditing & EDA:** Initial inspection of ~19,600 records and statistical profiling.
+2. **Feature Engineering:** Implementation of One-Hot Encoding for categorical variables (Crop, State, Season).
+3. **Modeling:** Training a **Linear Regression** model as a high-interpretability baseline.
+4. **Validation:** Performance evaluation using R², MAE, and RMSE metrics.
+5. **Interpretability:** Analysis of coefficients to identify the most influential factors on crop yield.
 
-## 🤖 Modelo de Machine Learning
-
-- Algoritmo utilizado: **Regressão Linear**
-
-### Justificativa da escolha:
-- Capaz de capturar **relações não lineares**
-- Robusto a outliers e variações regionais
-- Muito utilizado em aplicações reais no agronegócio
-- Permite **interpretação do modelo** por meio da análise de importância das variáveis
+### 📈 Key Results
+* **Performance:** The model achieved an **R² ≈ 0.80**, explaining 80% of the yield variability.
+* **Strategic Insights:** Identified that specific crops and regional rainfall patterns are the primary drivers of productivity, supporting data-driven decision-making.
 
 ---
 
-## 📈 Resultados Obtidos
+<a name="portugues"></a>
+## 🇧🇷 Português
 
-- O modelo apresentou **bom desempenho preditivo**, com:
-  - **R² ≈ 0,80**
-- Variáveis relacionadas a:
-  - Tipo de cultura
-  - Estado
-  - Volume de chuva
-  - Uso de insumos agrícolas  
-  demonstraram forte influência na produtividade.
-- A análise de importância das variáveis contribui para:
-  - Melhor entendimento do fenômeno agrícola
-  - Apoio à tomada de decisões futuras
+### 📝 Visão Geral do Projeto
+Este projeto aplica técnicas de **Ciência de Dados** e **Machine Learning** para prever a produtividade agrícola (Yield) com base em fatores ambientais e produtivos (chuva, fertilizantes, pesticidas, área e localização).
 
----
+Desenvolvido com dados reais de estados da Índia, o projeto simula o fluxo de trabalho de departamentos de P&D no agronegócio global, transformando dados brutos em inteligência preditiva para suporte à decisão.
 
-## 📊 Visualizações e Interpretabilidade
+### 🔬 Metodologia Técnica
+1. **Auditoria e EDA:** Inspeção inicial de ~19.600 registros e perfil estatístico.
+2. **Engenharia de Atributos:** Aplicação de One-Hot Encoding para converter variáveis categóricas (Cultura, Estado, Estação) em modelos numéricos.
+3. **Modelagem:** Treinamento de um modelo de **Regressão Linear**, escolhido pela sua alta interpretabilidade técnica.
+4. **Validação:** Avaliação de desempenho através das métricas R², MAE e RMSE.
+5. **Interpretabilidade:** Análise de coeficientes (Feature Importance) para identificar os fatores de maior impacto no rendimento.
 
-Foram gerados gráficos para:
-- Identificar as **variáveis com maior impacto na produtividade**
-- Facilitar a interpretação do modelo
-- Tornar os resultados mais acessíveis para públicos técnicos e não técnicos
-
-Essa abordagem é amplamente utilizada em empresas do setor agrícola para **suporte à decisão baseada em dados**.
+### 📈 Resultados Obtidos
+* **Desempenho:** O modelo alcançou um **R² ≈ 0,80**, demonstrando alta aderência aos dados reais.
+* **Insights Estratégicos:** Variáveis relacionadas ao tipo de cultura e volume de chuva demonstraram maior peso na produtividade final, permitindo predições seguras para o planejamento de safra.
 
 ---
 
-👤 Autor:
-Projeto desenvolvido por Cleverson Moura Andrade
-Estágiario em Ciência de Dados
+## 📂 Repository Structure / Estrutura do Repositório
+
+- 📄 [crop_yield_analysis.ipynb](./notebooks/crop_yield_analysis.ipynb): Notebook principal com o pipeline de Machine Learning.
+- 📊 [crop_yield_india.csv](./crop_yield_india.csv): Dataset original utilizado para treino e teste do modelo.
+
+---
+👤 **Author / Autor:** Cleverson Moura Andrade  
+*Data Science Intern / Estagiário em Ciência de Dados*
